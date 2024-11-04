@@ -1,6 +1,35 @@
 window.addEventListener('load', function () {
 	const loader = document.getElementById('page-loader');
+	const data = [
+		document.getElementById('banner'),
+		document.getElementById('mapComparator'),
+		document.getElementById('colophon')
+	];
 	loader.classList.add('fade-out');
+	loader.addEventListener('transitionend', function() {
+        loader.style.display = "none";
+        const elements = document.querySelectorAll('.custom-bottom-medium');
+        const rightElements = document.querySelectorAll('.custom-right-medium');
+        const leftElements = document.querySelectorAll('.custom-left-medium');
+        const topElements = document.querySelectorAll(".custom-top-medium");
+
+        elements.forEach(el => el.classList.add('fade-in'));
+        rightElements.forEach(el => el.classList.add('fade-in'));
+        leftElements.forEach(el => el.classList.add('fade-in'));
+        topElements.forEach(el => el.classList.add('fade-in'));
+        setTimeout(function() {
+			data.forEach(element => {
+				if (element) {
+					element.style.opacity = "1"; // Set opacity for each element
+				}
+			});
+            elements.forEach(el => el.classList.add('show', 'uk-animation-slide-bottom-medium'));
+            rightElements.forEach(el => el.classList.add('show', 'uk-animation-slide-right-medium'));
+            leftElements.forEach(el => el.classList.add('show', 'uk-animation-slide-left-medium'));
+            topElements.forEach(el => el.classList.add('show', 'uk-animation-slide-top'));
+        }, 50); 
+    });
+	
 });
 
 document.querySelectorAll('.uk-nav a').forEach(link => {

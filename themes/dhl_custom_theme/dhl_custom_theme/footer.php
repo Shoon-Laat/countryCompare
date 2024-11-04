@@ -12,7 +12,7 @@
 ?>
 
 <footer id="colophon"
-	class="site-footer uk-padding-small uk-position-sticky uk-position-bottom uk-width-1-1 footer-bg uk-animation-slide-bottom">
+	class="site-footer uk-padding-small uk-position-sticky uk-position-bottom uk-width-1-1 footer-bg custom-bottom-medium">
 	<div
 		class="uk-container-small uk-flex uk-flex-between uk-flex-middle uk-padding-large uk-padding-remove-top uk-padding-remove-bottom uk-margin-auto">
 		<a href="#"

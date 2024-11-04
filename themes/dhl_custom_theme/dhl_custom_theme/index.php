@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<div class="custom-gradient uk-padding-small uk-animation-fade uk-transform-origin-top-center">
+<div class="custom-gradient uk-padding-small custom-top-medium uk-transform-origin-top-center banner" id="banner">
     <div class="uk-container-small uk-margin-auto uk-padding-large uk-padding-remove-top uk-padding-remove-bottom">
         <span class="uk-text-primary uk-text-normal uk-text-lead">Global Trade</span>
         <h2 class="uk-margin-remove uk-text-primary uk-text-bold uk-heading-small">Country Comparator</h2>
@@ -26,9 +26,9 @@ get_header();
 </div>
 <div class="uk-width-1-1">
     <div class="custom-background">
-        <div class="uk-margin-auto uk-container-small">
+        <div class="uk-margin-auto uk-container-small map-comparator" id="mapComparator">
             <div class="map-gp map-container uk-margin-auto uk-position-relative">
-                <div class="uk-position-absolute uk-animation-slide-bottom-medium">
+                <div class="uk-position-absolute custom-bottom-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-block map-1 uk-padding uk-padding-remove-top uk-padding-remove-bottom"
                         data-value="uk">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_uk.png" alt="United Kingdom"
@@ -43,7 +43,7 @@ get_header();
                         </span>
                     </a>
                 </div>
-                <div class="uk-position-absolute custom-left-position uk-animation-slide-bottom-medium">
+                <div class="uk-position-absolute custom-left-position custom-bottom-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-block map-2 uk-padding-remove-top uk-padding-remove-bottom"
                         data-value="germany">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_germany.png" alt="Germany"
@@ -58,7 +58,7 @@ get_header();
                         </span>
                     </a>
                 </div>
-                <div class="uk-position-absolute custom-right-position uk-animation-slide-right-medium">
+                <div class="uk-position-absolute custom-right-position custom-right-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-block map-3 uk-padding-remove-top uk-padding-remove-bottom"
                         data-value="china">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_china.png" alt="China"
@@ -73,7 +73,7 @@ get_header();
                         </span>
                     </a>
                 </div>
-                <div class="uk-position-absolute custom-bottom-position uk-animation-slide-left-medium">
+                <div class="uk-position-absolute custom-bottom-position custom-left-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-block map-4"
                         data-value="us">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_us.png" alt="United States"
@@ -88,7 +88,7 @@ get_header();
                         </span>
                     </a>
                 </div>
-                <div class="uk-position-absolute custom-center-position uk-animation-slide-bottom-medium">
+                <div class="uk-position-absolute custom-center-position custom-bottom-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-inline-block map-5"
                         data-value="india">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_india.png" alt="India"
@@ -102,7 +102,7 @@ get_header();
                         </span>
                     </a>
                 </div>
-                <div class="uk-position-absolute custom-top-position uk-animation-slide-right-medium">
+                <div class="uk-position-absolute custom-top-position custom-right-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-inline-block map-6 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top"
                         data-value="korea">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_korea.png" alt="Korea"
@@ -116,7 +116,7 @@ get_header();
                         </span>
                     </a>
                 </div>
-                <div class="uk-position-absolute custom-position uk-animation-slide-right-medium">
+                <div class="uk-position-absolute custom-position custom-right-medium">
                     <a class="uk-transition-toggle map-content uk-position-relative uk-display-inline-block map-7"
                         data-value="japan">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/img_jpn.webp" alt="Japan"
@@ -131,7 +131,7 @@ get_header();
                     </a>
                 </div>
             </div><!--map content!-->
-            <div class="uk-flex uk-margin-auto uk-animation-slide-bottom-medium">
+            <div class="uk-flex uk-margin-auto custom-bottom-medium">
                 <div class="uk-background-secondary uk-flex custom-flex uk-flex-between uk-flex-middle report-container uk-margin-auto uk-padding-small">
                     <span class="uk-visible@m">Reporting Period</span>
                     <div class="uk-form-select uk-margin-left uk-margin-right custom-margin
@@ -292,7 +292,7 @@ get_header();
     </div><!--Reporting period section!-->
 </div>
 
-<div class="uk-position-fixed uk-background-default uk-box-shadow-medium uk-width-1-1 uk-hidden uk-position-top uk-animation-slide-top" id="countryComparator">
+<div class="uk-position-fixed uk-background-default uk-box-shadow-medium uk-width-1-1 uk-hidden uk-position-top custom-top-medium" id="countryComparator">
     <div class="uk-container-small uk-padding-small uk-margin-auto uk-visible@m">
         <div class="uk-flex uk-flex-middle uk-flex-between uk-grid-small">
             <div class="uk-width-auto">
